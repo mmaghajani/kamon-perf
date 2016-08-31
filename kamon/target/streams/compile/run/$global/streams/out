@@ -1,0 +1,404 @@
+[0m[[0minfo[0m] [0mRunning kamontest.Main [0m
+[0m[[31merror[0m] [0m[AppClassLoader@18b4aac2] warning at akka/kamon/instrumentation/ActorLoggingInstrumentation.scala::0 no match for this type name: akka.event.slf4j.Slf4jLogger [Xlint:invalidAbsoluteTypeName][0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:04.019] [main] [SystemMetricsExtension(akka://kamon)] Starting the Kamon(SystemMetrics) extension[0m
+[0m[[31merror[0m] [0mAug 31, 2016 5:32:04 PM kamon.sigar.SigarProvisioner provision[0m
+[0m[[31merror[0m] [0mINFO: Sigar library provisioned: /home/mma/Desktop/Desktop/projects/scala/kamon/native/libsigar-amd64-linux.so[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:06.381] [main] [PerfReporterExtension(akka://kamon)] Starting the Kamon(PerfReporter) extension[0m
+[0m[[0minfo[0m] [0m[ERROR] [08/31/2016 17:32:06.456] [main] [ModuleLoader(akka://kamon)] Failed to auto start the [kamon-perf] module.[0m
+[0m[[0minfo[0m] [0mjava.lang.ClassNotFoundException: kamon.statsd.SimpleMetricKeyGenerator[0m
+[0m[[0minfo[0m] [0m	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)[0m
+[0m[[0minfo[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)[0m
+[0m[[0minfo[0m] [0m	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)[0m
+[0m[[0minfo[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)[0m
+[0m[[0minfo[0m] [0m	at java.lang.Class.forName0(Native Method)[0m
+[0m[[0minfo[0m] [0m	at java.lang.Class.forName(Class.java:348)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:21)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Try$.apply(Try.scala:192)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess.getClassFor(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess.createInstanceFor(ReflectiveDynamicAccess.scala:38)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporterExtension.buildMetricsListener(PerfReporter.scala:43)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporterExtension.<init>(PerfReporter.scala:32)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporter$.createExtension(PerfReporter.scala:14)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporter$.createExtension(PerfReporter.scala:12)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.registerExtension(ActorSystem.scala:757)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ExtensionId$class.apply(Extension.scala:79)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporter$.apply(PerfReporter.scala:12)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ExtensionId$class.get(Extension.scala:91)[0m
+[0m[[0minfo[0m] [0m	at im.nasim.kamon.PerfReporter$.get(PerfReporter.scala:12)[0m
+[0m[[0minfo[0m] [0m	at kamon.ModuleLoaderExtension$$anonfun$2$$anonfun$apply$2.apply(ModuleLoader.scala:44)[0m
+[0m[[0minfo[0m] [0m	at kamon.ModuleLoaderExtension$$anonfun$2$$anonfun$apply$2.apply(ModuleLoader.scala:42)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Success$$anonfun$map$1.apply(Try.scala:237)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Try$.apply(Try.scala:192)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Success.map(Try.scala:237)[0m
+[0m[[0minfo[0m] [0m	at kamon.ModuleLoaderExtension.<init>(ModuleLoader.scala:38)[0m
+[0m[[0minfo[0m] [0m	at kamon.ModuleLoader$.createExtension(ModuleLoader.scala:27)[0m
+[0m[[0minfo[0m] [0m	at kamon.ModuleLoader$.createExtension(ModuleLoader.scala:25)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.registerExtension(ActorSystem.scala:757)[0m
+[0m[[0minfo[0m] [0m	at kamon.Kamon$.start(Kamon.scala:55)[0m
+[0m[[0minfo[0m] [0m	at kamon.Kamon$.start(Kamon.scala:67)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:10)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)[0m
+[0m[[0minfo[0m] [0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)[0m
+[0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:381)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)[0m
+[0m[[0minfo[0m] [0m	at scala.App$class.main(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main.main(Main.scala)[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:06.629] [main] [LogReporterExtension(akka://kamon)] Starting the Kamon(LogReporter) extension[0m
+[0m[[0minfo[0m] [0m[ERROR] [08/31/2016 17:32:09.679] [main] [akka.actor.ActorSystemImpl(application)] While trying to load extension [kamon.metric.Metrics], skipping...[0m
+[0m[[0minfo[0m] [0mjava.lang.ClassNotFoundException: kamon.metric.Metrics[0m
+[0m[[0minfo[0m] [0m	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)[0m
+[0m[[0minfo[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)[0m
+[0m[[0minfo[0m] [0m	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)[0m
+[0m[[0minfo[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)[0m
+[0m[[0minfo[0m] [0m	at java.lang.Class.forName0(Native Method)[0m
+[0m[[0minfo[0m] [0m	at java.lang.Class.forName(Class.java:348)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:21)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Try$.apply(Try.scala:192)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess.getClassFor(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ReflectiveDynamicAccess.createInstanceFor(ReflectiveDynamicAccess.scala:38)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1$$anonfun$1.applyOrElse(ActorSystem.scala:785)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1$$anonfun$1.applyOrElse(ActorSystem.scala:785)[0m
+[0m[[0minfo[0m] [0m	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)[0m
+[0m[[0minfo[0m] [0m	at scala.util.Failure.recoverWith(Try.scala:203)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1.apply(ActorSystem.scala:785)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1.apply(ActorSystem.scala:784)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.Iterator$class.foreach(Iterator.scala:893)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1336)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.loadExtensions(ActorSystem.scala:784)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.liftedTree2$1(ActorSystem.scala:672)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl._start$lzycompute(ActorSystem.scala:665)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl._start(ActorSystem.scala:665)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.start(ActorSystem.scala:681)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:143)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:110)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:19)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)[0m
+[0m[[0minfo[0m] [0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)[0m
+[0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:381)[0m
+[0m[[0minfo[0m] [0m	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)[0m
+[0m[[0minfo[0m] [0m	at scala.App$class.main(App.scala:76)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main.main(Main.scala)[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:09.716] [main] [PerfReporterExtension(akka://application)] Starting the Kamon(PerfReporter) extension[0m
+[0m[[31merror[0m] [0mException in thread "main" java.lang.ClassNotFoundException: kamon.statsd.SimpleMetricKeyGenerator[0m
+[0m[[31merror[0m] [0m	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)[0m
+[0m[[31merror[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)[0m
+[0m[[31merror[0m] [0m	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)[0m
+[0m[[31merror[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)[0m
+[0m[[31merror[0m] [0m	at java.lang.Class.forName0(Native Method)[0m
+[0m[[31merror[0m] [0m	at java.lang.Class.forName(Class.java:348)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:21)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ReflectiveDynamicAccess$$anonfun$getClassFor$1.apply(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[31merror[0m] [0m	at scala.util.Try$.apply(Try.scala:192)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ReflectiveDynamicAccess.getClassFor(ReflectiveDynamicAccess.scala:20)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ReflectiveDynamicAccess.createInstanceFor(ReflectiveDynamicAccess.scala:38)[0m
+[0m[[31merror[0m] [0m	at im.nasim.kamon.PerfReporterExtension.buildMetricsListener(PerfReporter.scala:43)[0m
+[0m[[31merror[0m] [0m	at im.nasim.kamon.PerfReporterExtension.<init>(PerfReporter.scala:32)[0m
+[0m[[31merror[0m] [0m	at im.nasim.kamon.PerfReporter$.createExtension(PerfReporter.scala:14)[0m
+[0m[[31merror[0m] [0m	at im.nasim.kamon.PerfReporter$.createExtension(PerfReporter.scala:12)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl.registerExtension(ActorSystem.scala:757)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1.apply(ActorSystem.scala:786)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl$$anonfun$loadExtensions$1.apply(ActorSystem.scala:784)[0m
+[0m[[31merror[0m] [0m	at scala.collection.Iterator$class.foreach(Iterator.scala:893)[0m
+[0m[[31merror[0m] [0m	at scala.collection.AbstractIterator.foreach(Iterator.scala:1336)[0m
+[0m[[31merror[0m] [0m	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)[0m
+[0m[[31merror[0m] [0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl.loadExtensions(ActorSystem.scala:784)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl.liftedTree2$1(ActorSystem.scala:672)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl._start$lzycompute(ActorSystem.scala:665)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl._start(ActorSystem.scala:665)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystemImpl.start(ActorSystem.scala:681)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:143)[0m
+[0m[[31merror[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:110)[0m
+[0m[[31merror[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:19)[0m
+[0m[[31merror[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:8)[0m
+[0m[[31merror[0m] [0m	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)[0m
+[0m[[31merror[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[31merror[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
+[0m[[31merror[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:381)[0m
+[0m[[31merror[0m] [0m	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)[0m
+[0m[[31merror[0m] [0m	at scala.App$class.main(App.scala:76)[0m
+[0m[[31merror[0m] [0m	at kamontest.Main$.main(Main.scala:8)[0m
+[0m[[31merror[0m] [0m	at kamontest.Main.main(Main.scala)[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:14.045] [kamon-akka.actor.default-dispatcher-3] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
+[0m[[0minfo[0m] [0m|       Min: 47                    Min: 0                 Min: 0             Min: 0                |[0m
+[0m[[0minfo[0m] [0m|       Avg: 72.0                   Avg: 4.0               Avg: 0.0           Avg: 22.0              |[0m
+[0m[[0minfo[0m] [0m|       Max: 100                   Max: 12                Max: 0             Max: 48               |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:14.050] [kamon-akka.actor.default-dispatcher-3] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
+[0m[[0minfo[0m] [0m|                Min: 45                                   Min: 45                                 |[0m
+[0m[[0minfo[0m] [0m|                Avg: 45.0                                 Avg: 45.0                               |[0m
+[0m[[0minfo[0m] [0m|                Max: 45                                   Max: 46                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:14.055] [kamon-akka.actor.default-dispatcher-3] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
+[0m[[0minfo[0m] [0m|      Min: 0                     Min: 0                    Total: 0             Total: 0         |[0m
+[0m[[0minfo[0m] [0m|      Avg: 46.0                Avg: 122.0                                                     |[0m
+[0m[[0minfo[0m] [0m|      Max: 278                   Max: 736                                                        |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:14.066] [kamon-akka.actor.default-dispatcher-3] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
+[0m[[0minfo[0m] [0m|    Min: 161480704                      Min: 7                             Min: 1                 |[0m
+[0m[[0minfo[0m] [0m|    Avg: 1.61480704E8                   Avg: 7.0                           Avg: 1.0               |[0m
+[0m[[0minfo[0m] [0m|    Max: 161480704                      Max: 7                             Max: 1                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:14.080] [kamon-akka.actor.default-dispatcher-3] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
+[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
+[0m[[0minfo[0m] [0m|                               some-counter  =>  1                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
+[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
+[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Min: 42           50th Perc: 42             90th Perc: 50             95th Perc: 50           |[0m
+[0m[[0minfo[0m] [0m|                      99th Perc: 50           99.9th Perc: 50                   Max: 50           |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
+[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:23.974] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
+[0m[[0minfo[0m] [0m|       Min: 6                     Min: 1                 Min: 0             Min: 60               |[0m
+[0m[[0minfo[0m] [0m|       Avg: 11.0                   Avg: 2.0               Avg: 1.0           Avg: 82.0              |[0m
+[0m[[0minfo[0m] [0m|       Max: 34                    Max: 4                 Max: 3             Max: 89               |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:23.974] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
+[0m[[0minfo[0m] [0m|                Min: 0                                    Min: 0                                  |[0m
+[0m[[0minfo[0m] [0m|                Avg: 4.0                                  Avg: 4.0                                |[0m
+[0m[[0minfo[0m] [0m|                Max: 18                                   Max: 18                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:23.975] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
+[0m[[0minfo[0m] [0m|      Min: 0                     Min: 0                    Total: 0             Total: 0         |[0m
+[0m[[0minfo[0m] [0m|      Avg: 131.0                Avg: 54.0                                                     |[0m
+[0m[[0minfo[0m] [0m|      Max: 458                   Max: 272                                                        |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:23.977] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
+[0m[[0minfo[0m] [0m|    Min: 161480704                      Min: 7                             Min: 1                 |[0m
+[0m[[0minfo[0m] [0m|    Avg: 1.61480704E8                   Avg: 7.0                           Avg: 1.0               |[0m
+[0m[[0minfo[0m] [0m|    Max: 161480704                      Max: 7                             Max: 1                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:23.982] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
+[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
+[0m[[0minfo[0m] [0m|                               some-counter  =>  0                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
+[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
+[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Min: 0            50th Perc: 0              90th Perc: 0              95th Perc: 0            |[0m
+[0m[[0minfo[0m] [0m|                      99th Perc: 0            99.9th Perc: 0                    Max: 0            |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
+[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:33.969] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
+[0m[[0minfo[0m] [0m|       Min: 6                     Min: 1                 Min: 1             Min: 82               |[0m
+[0m[[0minfo[0m] [0m|       Avg: 8.0                   Avg: 2.0               Avg: 1.0           Avg: 85.0              |[0m
+[0m[[0minfo[0m] [0m|       Max: 12                    Max: 3                 Max: 2             Max: 89               |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:33.970] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
+[0m[[0minfo[0m] [0m|                Min: 0                                    Min: 0                                  |[0m
+[0m[[0minfo[0m] [0m|                Avg: 1.0                                  Avg: 1.0                                |[0m
+[0m[[0minfo[0m] [0m|                Max: 2                                    Max: 2                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:33.972] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
+[0m[[0minfo[0m] [0m|      Min: 0                     Min: 0                    Total: 0             Total: 0         |[0m
+[0m[[0minfo[0m] [0m|      Avg: 213.0                Avg: 195.0                                                     |[0m
+[0m[[0minfo[0m] [0m|      Max: 1368                  Max: 1304                                                       |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:33.972] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
+[0m[[0minfo[0m] [0m|    Min: 161480704                      Min: 7                             Min: 1                 |[0m
+[0m[[0minfo[0m] [0m|    Avg: 1.61480704E8                   Avg: 7.0                           Avg: 1.0               |[0m
+[0m[[0minfo[0m] [0m|    Max: 161480704                      Max: 7                             Max: 1                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:33.973] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
+[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
+[0m[[0minfo[0m] [0m|                               some-counter  =>  0                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
+[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
+[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Min: 0            50th Perc: 0              90th Perc: 0              95th Perc: 0            |[0m
+[0m[[0minfo[0m] [0m|                      99th Perc: 0            99.9th Perc: 0                    Max: 0            |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
+[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:43.968] [kamon-akka.actor.default-dispatcher-10] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
+[0m[[0minfo[0m] [0m|       Min: 5                     Min: 2                 Min: 1             Min: 83               |[0m
+[0m[[0minfo[0m] [0m|       Avg: 7.0                   Avg: 2.0               Avg: 1.0           Avg: 86.0              |[0m
+[0m[[0minfo[0m] [0m|       Max: 12                    Max: 4                 Max: 3             Max: 90               |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:43.968] [kamon-akka.actor.default-dispatcher-10] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
+[0m[[0minfo[0m] [0m|                Min: 0                                    Min: 0                                  |[0m
+[0m[[0minfo[0m] [0m|                Avg: 0.0                                  Avg: 0.0                                |[0m
+[0m[[0minfo[0m] [0m|                Max: 1                                    Max: 1                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:43.969] [kamon-akka.actor.default-dispatcher-10] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
+[0m[[0minfo[0m] [0m|      Min: 0                     Min: 0                    Total: 0             Total: 0         |[0m
+[0m[[0minfo[0m] [0m|      Avg: 57.0                Avg: 100.0                                                     |[0m
+[0m[[0minfo[0m] [0m|      Max: 332                   Max: 736                                                        |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:43.969] [kamon-akka.actor.default-dispatcher-10] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
+[0m[[0minfo[0m] [0m|    Min: 161480704                      Min: 7                             Min: 1                 |[0m
+[0m[[0minfo[0m] [0m|    Avg: 1.62109849E8                   Avg: 7.0                           Avg: 1.0               |[0m
+[0m[[0minfo[0m] [0m|    Max: 162529280                      Max: 7                             Max: 1                 |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [08/31/2016 17:32:43.969] [kamon-akka.actor.default-dispatcher-10] [akka://kamon/user/kamon-log-reporter] [0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
+[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
+[0m[[0minfo[0m] [0m|                               some-counter  =>  0                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
+[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
+[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
+[0m[[0minfo[0m] [0m|    Min: 0            50th Perc: 0              90th Perc: 0              95th Perc: 0            |[0m
+[0m[[0minfo[0m] [0m|                      99th Perc: 0            99.9th Perc: 0                    Max: 0            |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
+[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
+[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
+[0m[[0minfo[0m] [0m|                                                                                                  |[0m
+[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m

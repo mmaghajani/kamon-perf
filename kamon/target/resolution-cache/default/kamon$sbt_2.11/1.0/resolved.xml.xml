@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="default"
+		module="kamon$sbt_2.11"
+		revision="1.0"
+		status="integration"
+		publication="20160831172943"
+	/>
+	<configurations>
+		<conf name="default" visibility="public"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-sbt" name="sbt" rev="0.13.7" conf="default->default(compile)"/>
+		<dependency org="com.typesafe.sbt" name="sbt-aspectj" rev="0.10.0" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="org.aspectj" name="aspectjtools" rev="1.8.2" conf="default->default(compile)"/>
+	</dependencies>
+</ivy-module>

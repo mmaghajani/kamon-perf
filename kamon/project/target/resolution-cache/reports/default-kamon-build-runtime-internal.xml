@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="kamon-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20160831173000"/>
+	<dependencies>
+		<module organisation="com.typesafe.sbt" name="sbt-aspectj">
+			<revision name="0.10.0" status="release" pubdate="20140912192843" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="no" details="" size="1531" time="0" location="/home/mma/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-aspectj/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-aspectj/scala_2.10/sbt_0.13/0.10.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="kamon-build" conf="compile, runtime-internal, runtime, optional" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-aspectj" type="jar" ext="jar" status="no" details="" size="62834" time="0" location="/home/mma/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-aspectj/jars/sbt-aspectj-0.10.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-aspectj/scala_2.10/sbt_0.13/0.10.0/jars/sbt-aspectj.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.aspectj" name="aspectjtools">
+			<revision name="1.8.2" status="release" pubdate="20140815043500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="no" details="" size="2366" time="0" location="/home/mma/.ivy2/cache/org.aspectj/aspectjtools/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/aspectj/aspectjtools/1.8.2/aspectjtools-1.8.2.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-aspectj" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="aspectjtools" type="jar" ext="jar" status="no" details="" size="11158088" time="0" location="/home/mma/.ivy2/cache/org.aspectj/aspectjtools/jars/aspectjtools-1.8.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/aspectj/aspectjtools/1.8.2/aspectjtools-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
