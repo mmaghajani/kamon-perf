@@ -39,20 +39,20 @@ class PerfReporterExtension(system: ExtendedActorSystem) extends Kamon.Extension
   }
 
   def buildMetricsListener(tickInterval: FiniteDuration, flushInterval: FiniteDuration, keyGeneratorFQCN: String, config: Config): ActorRef = {
-    assert(flushInterval >= tickInterval, "StatsD flush-interval needs to be equal or greater to the tick-interval")
+    assert(flushInterval >= tickInterval, "PerfR flush-interval needs to be equal or greater to the tick-interval")
     val keyGenerator = system.dynamicAccess.createInstanceFor[MetricKeyGenerator](keyGeneratorFQCN, (classOf[Config], config) :: Nil).get
 
     val metricsSender = system.actorOf(PerfRMetricsSender.props(
       perfConfig.getString("hostname"),
       perfConfig.getInt("port"),
       maxPacketSizeInBytes,
-      keyGenerator), "statsd-metrics-sender")
+      keyGenerator), "perfr-metrics-sender")
 
     if (flushInterval == tickInterval) {
       // No need to buffer the metrics, let's go straight to the metrics sender.
       metricsSender
     } else {
-      system.actorOf(TickMetricSnapshotBuffer.props(flushInterval, metricsSender), "statsd-metrics-buffer")
+      system.actorOf(TickMetricSnapshotBuffer.props(flushInterval, metricsSender), "perfr-metrics-buffer")
     }
   }
 }
