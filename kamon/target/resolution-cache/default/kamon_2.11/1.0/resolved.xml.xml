@@ -4,7 +4,7 @@
 		module="kamon_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160901084802"
+		publication="20160901092426"
 	>
 		<description>
 		kamon
@@ -41,7 +41,6 @@
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.4.1" conf="compile->default(compile)"/>
 		<dependency org="io.kamon" name="kamon-core_2.11" rev="0.5.1" conf="compile->default(compile)"/>
 		<dependency org="io.kamon" name="kamon-akka_2.11" rev="0.5.1" conf="compile->default(compile)"/>
-		<dependency org="io.kamon" name="kamon-log-reporter_2.11" rev="0.5.1" conf="compile->default(compile)"/>
 		<dependency org="io.kamon" name="kamon-system-metrics_2.11" rev="0.5.1" conf="compile->default(compile)"/>
 		<dependency org="org.aspectj" name="aspectjweaver" rev="1.8.5" conf="compile->default(compile)"/>
 		<dependency org="org.aspectj" name="aspectjtools" rev="1.8.2" conf="aspectj->default(compile)"/>

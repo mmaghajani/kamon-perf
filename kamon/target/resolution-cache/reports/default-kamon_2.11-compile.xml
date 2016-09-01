@@ -7,10 +7,10 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, aspectj"
-		date="20160901084802"/>
+		date="20160901092426"/>
 	<dependencies>
 		<module organisation="org.aspectj" name="aspectjrt">
-			<revision name="1.8.2" status="release" pubdate="20140815043200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+			<revision name="1.8.2" status="release" pubdate="20140815043200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<metadata-artifact status="no" details="" size="2383" time="0" location="/home/mma/.ivy2/cache/org.aspectj/aspectjrt/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/aspectj/aspectjrt/1.8.2/aspectjrt-1.8.2.pom"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="1.0"/>
@@ -22,7 +22,7 @@
 			</revision>
 		</module>
 		<module organisation="io.kamon" name="kamon-system-metrics_2.11">
-			<revision name="0.5.1" status="release" pubdate="20150831131424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kamon.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+			<revision name="0.5.1" status="release" pubdate="20150831131424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kamon.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3555" time="0" location="/home/mma/.ivy2/cache/io.kamon/kamon-system-metrics_2.11/ivy-0.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/kamon/kamon-system-metrics_2.11/0.5.1/kamon-system-metrics_2.11-0.5.1.pom"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="1.0"/>
@@ -34,25 +34,13 @@
 			</revision>
 		</module>
 		<module organisation="io.kamon" name="sigar-loader">
-			<revision name="1.6.5-rev002" status="release" pubdate="20150812200824" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kamon.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+			<revision name="1.6.5-rev002" status="release" pubdate="20150812200824" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kamon.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3359" time="0" location="/home/mma/.ivy2/cache/io.kamon/sigar-loader/ivy-1.6.5-rev002.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/kamon/sigar-loader/1.6.5-rev002/sigar-loader-1.6.5-rev002.pom"/>
 				<caller organisation="io.kamon" name="kamon-system-metrics_2.11" conf="default, compile, runtime, master" rev="1.6.5-rev002" rev-constraint-default="1.6.5-rev002" rev-constraint-dynamic="1.6.5-rev002" callerrev="0.5.1"/>
 				<artifacts>
 					<artifact name="sigar-loader" type="jar" ext="jar" status="no" details="" size="2542694" time="0" location="/home/mma/.ivy2/cache/io.kamon/sigar-loader/jars/sigar-loader-1.6.5-rev002.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/kamon/sigar-loader/1.6.5-rev002/sigar-loader-1.6.5-rev002.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="io.kamon" name="kamon-log-reporter_2.11">
-			<revision name="0.5.1" status="release" pubdate="20150831131347" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kamon.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
-				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3305" time="0" location="/home/mma/.ivy2/cache/io.kamon/kamon-log-reporter_2.11/ivy-0.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/kamon/kamon-log-reporter_2.11/0.5.1/kamon-log-reporter_2.11-0.5.1.pom"/>
-				<caller organisation="default" name="kamon_2.11" conf="compile" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="kamon-log-reporter_2.11" type="jar" ext="jar" status="no" details="" size="63642" time="0" location="/home/mma/.ivy2/cache/io.kamon/kamon-log-reporter_2.11/jars/kamon-log-reporter_2.11-0.5.1.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/kamon/kamon-log-reporter_2.11/0.5.1/kamon-log-reporter_2.11-0.5.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -87,7 +75,6 @@
 				<metadata-artifact status="no" details="" size="3839" time="0" location="/home/mma/.ivy2/cache/io.kamon/kamon-core_2.11/ivy-0.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/kamon/kamon-core_2.11/0.5.1/kamon-core_2.11-0.5.1.pom"/>
 				<caller organisation="io.kamon" name="kamon-system-metrics_2.11" conf="default, compile, runtime, master" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="0.5.1"/>
 				<caller organisation="io.kamon" name="kamon-akka_2.11" conf="default, compile, runtime, master" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="0.5.1"/>
-				<caller organisation="io.kamon" name="kamon-log-reporter_2.11" conf="default, compile, runtime, master" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="0.5.1"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="1.0"/>
 				<caller organisation="io.kamon" name="kamon-scala_2.11" conf="compile, runtime" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="0.5.1"/>
 				<artifacts>
@@ -110,7 +97,7 @@
 			</revision>
 		</module>
 		<module organisation="org.aspectj" name="aspectjweaver">
-			<revision name="1.8.5" status="release" pubdate="20150129045029" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+			<revision name="1.8.5" status="release" pubdate="20150129045029" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.aspectj.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<metadata-artifact status="no" details="" size="2391" time="0" location="/home/mma/.ivy2/cache/org.aspectj/aspectjweaver/ivy-1.8.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.8.5/aspectjweaver-1.8.5.pom"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="1.8.5" rev-constraint-default="1.8.5" rev-constraint-dynamic="1.8.5" callerrev="1.0"/>
@@ -188,7 +175,6 @@
 				<caller organisation="io.kamon" name="kamon-core_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="2.4.1"/>
 				<caller organisation="io.kamon" name="kamon-akka_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
-				<caller organisation="io.kamon" name="kamon-log-reporter_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="1.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-testkit_2.11" conf="default, compile, runtime, master" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="2.4.1"/>
 				<artifacts>
@@ -201,7 +187,6 @@
 				<evicted-by rev="2.4.1"/>
 				<caller organisation="io.kamon" name="kamon-core_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
 				<caller organisation="io.kamon" name="kamon-akka_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
-				<caller organisation="io.kamon" name="kamon-log-reporter_2.11" conf="default, compile, runtime, master" rev="2.3.10" rev-constraint-default="2.3.10" rev-constraint-dynamic="2.3.10" callerrev="0.5.1"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -233,7 +218,6 @@
 				<caller organisation="io.kamon" name="kamon-system-metrics_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.4.1"/>
 				<caller organisation="io.kamon" name="kamon-akka_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
-				<caller organisation="io.kamon" name="kamon-log-reporter_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<caller organisation="default" name="kamon_2.11" conf="compile" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="1.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.4.1"/>
 				<caller organisation="com.typesafe.akka" name="akka-protobuf_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="2.4.1"/>
@@ -250,7 +234,6 @@
 				<caller organisation="io.kamon" name="kamon-core_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<caller organisation="io.kamon" name="kamon-system-metrics_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<caller organisation="io.kamon" name="kamon-akka_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
-				<caller organisation="io.kamon" name="kamon-log-reporter_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<caller organisation="io.kamon" name="kamon-scala_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="0.5.1"/>
 				<artifacts>
 				</artifacts>

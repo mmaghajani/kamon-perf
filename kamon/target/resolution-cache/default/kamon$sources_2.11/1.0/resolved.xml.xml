@@ -4,7 +4,7 @@
 		module="kamon$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160831172945"
+		publication="20160901092241"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -60,9 +60,6 @@
 		</dependency>
 		<dependency org="io.kamon" name="kamon-scala_2.11" rev="0.5.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="kamon-scala_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="io.kamon" name="kamon-log-reporter_2.11" rev="0.5.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="kamon-log-reporter_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="io.kamon" name="kamon-system-metrics_2.11" rev="0.5.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="kamon-system-metrics_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>

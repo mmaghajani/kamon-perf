@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#kamon_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cdc8a2f[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12047905[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.8] org.scala-lang#scala-library;2.11.8[0m
@@ -208,32 +208,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving io.kamon#kamon-log-reporter_2.11;0.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.kamon#kamon-log-reporter_2.11;0.5.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.kamon#kamon-log-reporter_2.11;0.5.1[0m
-[0m[[0mdebug[0m] [0m	found io.kamon#kamon-log-reporter_2.11;0.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.kamon#kamon-system-metrics_2.11;0.5.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.kamon#kamon-system-metrics_2.11;0.5.1 {compile=[default(compile)]}[0m
@@ -420,28 +394,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->compile][0m
@@ -611,28 +563,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->compile][0m
@@ -838,28 +768,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->compile][0m
@@ -1031,28 +939,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->compile][0m
@@ -1224,28 +1110,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-akka_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->org.scala-lang#scala-library;2.11.8 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->io.kamon#kamon-core_2.11;0.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.3.10 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies io.kamon#kamon-log-reporter_2.11;0.5.1->com.typesafe.akka#akka-actor_2.11;2.4.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-log-reporter_2.11;0.5.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#kamon_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->compile][0m
@@ -1411,7 +1275,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.4.1!akka-testkit_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.kamon#kamon-core_2.11;0.5.1!kamon-core_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.kamon#kamon-akka_2.11;0.5.1!kamon-akka_2.11.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.kamon#kamon-log-reporter_2.11;0.5.1!kamon-log-reporter_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.kamon#kamon-system-metrics_2.11;0.5.1!kamon-system-metrics_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.8.5!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjrt;1.8.2!aspectjrt.jar[0m
@@ -1431,7 +1294,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjtools;1.8.2!aspectjtools.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.8.2!aspectjweaver.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 700ms :: artifacts dl 21ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 249ms :: artifacts dl 10ms[0m
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 compile produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 runtime produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 test produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-test.xml[0m
@@ -1446,7 +1309,7 @@
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 pom produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 scala-tool produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#kamon_2.11;1.0 aspectj produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon_2.11-aspectj.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (700ms resolve - 21ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (249ms resolve - 10ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
 [0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m
