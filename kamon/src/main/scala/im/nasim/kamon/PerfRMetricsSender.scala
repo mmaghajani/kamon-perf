@@ -11,7 +11,7 @@ import java.util.Locale
 
 import kamon.metric.instrument.{Counter, Histogram}
 
-class PerfRMetricsSender(perfRHost: String, statsDPort: Int, maxPacketSizeInBytes: Long, metricKeyGenerator: MetricKeyGenerator)
+class PerfRMetricsSender(perfRHost: String, perfRPort: Int, maxPacketSizeInBytes: Long, metricKeyGenerator: MetricKeyGenerator)
   extends Actor with UdpExtensionProvider {
   import context.system
 
@@ -23,7 +23,7 @@ class PerfRMetricsSender(perfRHost: String, statsDPort: Int, maxPacketSizeInByte
 
   udpExtension ! Udp.SimpleSender
 
-  def newSocketAddress = new InetSocketAddress(perfRHost, statsDPort)
+  def newSocketAddress = new InetSocketAddress(perfRHost, perfRPort)
 
   def receive = {
     case Udp.SimpleSenderReady ⇒
