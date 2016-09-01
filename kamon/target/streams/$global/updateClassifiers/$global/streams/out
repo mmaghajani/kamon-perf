@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for default#kamon$sources_2.11;1.0 [compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@503f3e78
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@645f97b4
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8
 [debug] 	found org.scala-lang#scala-library;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-library;2.11.8
@@ -15,7 +15,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11929e4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ca7e07d
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.1
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->runtime]
@@ -23,7 +23,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe#config;1.3.0 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36234aba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ad3278c
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.0
 [debug] 	found com.typesafe#config;1.3.0 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe#config;1.3.0 [compile->runtime]
@@ -31,7 +31,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe#config;1.3.0 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.4.1 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-remote_2.11;2.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@697b4c2a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19efc501
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.11;2.4.1
 [debug] 	found com.typesafe.akka#akka-remote_2.11;2.4.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.4.1 [compile->runtime]
@@ -39,7 +39,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.4.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-protobuf_2.11;2.4.1 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-protobuf_2.11;2.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69956683
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@785700c7
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-protobuf_2.11;2.4.1
 [debug] 	found com.typesafe.akka#akka-protobuf_2.11;2.4.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-protobuf_2.11;2.4.1 [compile->runtime]
@@ -47,7 +47,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-protobuf_2.11;2.4.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.netty#netty;3.10.3.Final [compile->default(compile)]
 [info] Resolving io.netty#netty;3.10.3.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53eff42b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@b426449
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.10.3.Final
 [debug] 	found io.netty#netty;3.10.3.Final in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.netty#netty;3.10.3.Final [compile->runtime]
@@ -55,7 +55,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.netty#netty;3.10.3.Final [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28ea21b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11a3bf7e
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime]
@@ -63,7 +63,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.1 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-testkit_2.11;2.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5369a99a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@331776a8
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2.4.1
 [debug] 	found com.typesafe.akka#akka-testkit_2.11;2.4.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.1 [compile->runtime]
@@ -71,7 +71,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-core_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving io.kamon#kamon-core_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fc369b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@562c6dfd
 [debug] sbt-chain: module revision found in cache: io.kamon#kamon-core_2.11;0.5.1
 [debug] 	found io.kamon#kamon-core_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-core_2.11;0.5.1 [compile->runtime]
@@ -79,7 +79,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-core_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.hdrhistogram#HdrHistogram;2.1.6 [compile->default(compile)]
 [info] Resolving org.hdrhistogram#HdrHistogram;2.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34f1b9a8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3778bfc7
 [debug] sbt-chain: module revision found in cache: org.hdrhistogram#HdrHistogram;2.1.6
 [debug] 	found org.hdrhistogram#HdrHistogram;2.1.6 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.hdrhistogram#HdrHistogram;2.1.6 [compile->runtime]
@@ -87,7 +87,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.hdrhistogram#HdrHistogram;2.1.6 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving io.kamon#kamon-akka_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fa26a01
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b7f2e9a
 [debug] sbt-chain: module revision found in cache: io.kamon#kamon-akka_2.11;0.5.1
 [debug] 	found io.kamon#kamon-akka_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->runtime]
@@ -95,7 +95,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-akka_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-scala_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving io.kamon#kamon-scala_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b901a84
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38ffbecf
 [debug] sbt-chain: module revision found in cache: io.kamon#kamon-scala_2.11;0.5.1
 [debug] 	found io.kamon#kamon-scala_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-scala_2.11;0.5.1 [compile->runtime]
@@ -103,7 +103,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-scala_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->default(compile)]
 [info] Resolving io.kamon#kamon-system-metrics_2.11;0.5.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c5c1ed8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c24e864
 [debug] sbt-chain: module revision found in cache: io.kamon#kamon-system-metrics_2.11;0.5.1
 [debug] 	found io.kamon#kamon-system-metrics_2.11;0.5.1 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->runtime]
@@ -111,7 +111,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#kamon-system-metrics_2.11;0.5.1 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#sigar-loader;1.6.5-rev002 [compile->default(compile)]
 [info] Resolving io.kamon#sigar-loader;1.6.5-rev002 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b26bb16
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c305df
 [debug] sbt-chain: module revision found in cache: io.kamon#sigar-loader;1.6.5-rev002
 [debug] 	found io.kamon#sigar-loader;1.6.5-rev002 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#sigar-loader;1.6.5-rev002 [compile->runtime]
@@ -119,15 +119,23 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->io.kamon#sigar-loader;1.6.5-rev002 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->default(compile)]
 [info] Resolving org.aspectj#aspectjweaver;1.8.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73b3fcf3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46931997
 [debug] sbt-chain: module revision found in cache: org.aspectj#aspectjweaver;1.8.5
 [debug] 	found org.aspectj#aspectjweaver;1.8.5 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[info] Resolving com.github.ben-manes.caffeine#caffeine;2.3.3 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6902d4a9
+[debug] sbt-chain: module revision found in cache: com.github.ben-manes.caffeine#caffeine;2.3.3
+[debug] 	found com.github.ben-manes.caffeine#caffeine;2.3.3 in sbt-chain
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [info] Resolving org.aspectj#aspectjrt;1.8.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7329691d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1323348a
 [debug] sbt-chain: module revision found in cache: org.aspectj#aspectjrt;1.8.2
 [debug] 	found org.aspectj#aspectjrt;1.8.2 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
@@ -196,6 +204,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->compile]
@@ -260,6 +272,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->compile]
@@ -328,6 +344,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->compile]
@@ -392,6 +412,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->compile]
@@ -456,13 +480,17 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scalatest#scalatest_2.10;2.1.0 [test->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.10;2.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65f47595
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d0184c7
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;2.1.0
 [debug] 	found org.scalatest#scalatest_2.10;2.1.0 in sbt-chain
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scalatest#scalatest_2.10;2.1.0 [test->runtime]
@@ -470,7 +498,7 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scalatest#scalatest_2.10;2.1.0 [test->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.scala-lang#scala-reflect;2.10.3 [test->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.10.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31737845
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e750362
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.3
 [debug] 	found org.scala-lang#scala-reflect;2.10.3 in sbt-chain
 [debug] 	[2.10.3] org.scala-lang#scala-reflect;2.10.3
@@ -544,6 +572,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->compile]
@@ -610,6 +642,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile-internal->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile-internal->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile-internal->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile-internal->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile-internal->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile-internal->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile-internal->compile]
@@ -678,6 +714,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->compile]
@@ -742,6 +782,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->compile]
@@ -807,6 +851,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime-internal->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime-internal->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime-internal->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime-internal->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime-internal->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime-internal->compile]
@@ -876,6 +924,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [compile->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [compile->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [compile->compile]
@@ -940,6 +992,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [runtime->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [runtime->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [runtime->compile]
@@ -1004,6 +1060,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test->compile]
@@ -1078,6 +1138,10 @@
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test-internal->compile]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjweaver;1.8.5 [test-internal->master]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test-internal->default(compile)]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test-internal->runtime]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test-internal->compile]
+[debug] == resolving dependencies default#kamon$sources_2.11;1.0->com.github.ben-manes.caffeine#caffeine;2.3.3 [test-internal->master]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test-internal->default(compile)]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test-internal->runtime]
 [debug] == resolving dependencies default#kamon$sources_2.11;1.0->org.aspectj#aspectjrt;1.8.2 [test-internal->compile]
@@ -1195,6 +1259,8 @@
 [debug] 	[NOT REQUIRED] io.kamon#sigar-loader;1.6.5-rev002!sigar-loader.jar
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjweaver;1.8.5!aspectjweaver.jar(src)
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjweaver;1.8.5!aspectjweaver.jar
+[debug] 	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.3.3!caffeine.jar(src)
+[debug] 	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.3.3!caffeine.jar
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjrt;1.8.2!aspectjrt.jar(src)
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjrt;1.8.2!aspectjrt.jar
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.1.0!scalatest_2.10.jar(src)
@@ -1208,7 +1274,7 @@
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjtools;1.8.2!aspectjtools.jar(src)
 [debug] 	[NOT REQUIRED] org.aspectj#aspectjweaver;1.8.2!aspectjweaver.jar(src)
-[debug] :: resolution report :: resolve 342ms :: artifacts dl 68ms
+[debug] :: resolution report :: resolve 566ms :: artifacts dl 38ms
 [debug] 	report for default#kamon$sources_2.11;1.0 compile produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-compile.xml
 [debug] 	report for default#kamon$sources_2.11;1.0 runtime produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-runtime.xml
 [debug] 	report for default#kamon$sources_2.11;1.0 test produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-test.xml
@@ -1223,4 +1289,4 @@
 [debug] 	report for default#kamon$sources_2.11;1.0 pom produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-pom.xml
 [debug] 	report for default#kamon$sources_2.11;1.0 scala-tool produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-scala-tool.xml
 [debug] 	report for default#kamon$sources_2.11;1.0 aspectj produced in /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/target/resolution-cache/reports/default-kamon$sources_2.11-aspectj.xml
-[debug] 	resolve done (342ms resolve - 68ms download)
+[debug] 	resolve done (566ms resolve - 38ms download)

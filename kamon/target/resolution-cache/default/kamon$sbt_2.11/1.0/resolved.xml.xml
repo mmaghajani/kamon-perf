@@ -4,7 +4,7 @@
 		module="kamon$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160901092240"
+		publication="20160901103519"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

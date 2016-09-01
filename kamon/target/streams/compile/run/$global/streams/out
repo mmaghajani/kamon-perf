@@ -1,10 +1,10 @@
 [0m[[0minfo[0m] [0mRunning kamontest.Main [0m
 [0m[[31merror[0m] [0m[AppClassLoader@18b4aac2] warning at akka/kamon/instrumentation/ActorLoggingInstrumentation.scala::0 no match for this type name: akka.event.slf4j.Slf4jLogger [Xlint:invalidAbsoluteTypeName][0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:36.785] [main] [PerfReporterExtension(akka://kamon)] Starting the Kamon(PerfReporter) extension[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:36.811] [main] [SystemMetricsExtension(akka://kamon)] Starting the Kamon(SystemMetrics) extension[0m
-[0m[[31merror[0m] [0mSep 01, 2016 9:24:36 AM kamon.sigar.SigarProvisioner provision[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:40.149] [main] [PerfReporterExtension(akka://kamon)] Starting the Kamon(PerfReporter) extension[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:40.207] [main] [SystemMetricsExtension(akka://kamon)] Starting the Kamon(SystemMetrics) extension[0m
+[0m[[31merror[0m] [0mSep 01, 2016 3:20:40 PM kamon.sigar.SigarProvisioner provision[0m
 [0m[[31merror[0m] [0mINFO: Sigar library provisioned: /home/mma/Desktop/Desktop/projects/scala/kamon-perf/kamon/native/libsigar-amd64-linux.so[0m
-[0m[[0minfo[0m] [0m[ERROR] [09/01/2016 09:24:37.098] [main] [akka.actor.ActorSystemImpl(application)] While trying to load extension [kamon.metric.Metrics], skipping...[0m
+[0m[[0minfo[0m] [0m[ERROR] [09/01/2016 15:20:40.777] [main] [akka.actor.ActorSystemImpl(application)] While trying to load extension [kamon.metric.Metrics], skipping...[0m
 [0m[[0minfo[0m] [0mjava.lang.ClassNotFoundException: kamon.metric.Metrics[0m
 [0m[[0minfo[0m] [0m	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)[0m
 [0m[[0minfo[0m] [0m	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)[0m
@@ -34,8 +34,8 @@
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.start(ActorSystem.scala:681)[0m
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:143)[0m
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:110)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:19)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:21)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:10)[0m
 [0m[[0minfo[0m] [0m	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)[0m
 [0m[[0minfo[0m] [0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)[0m
 [0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
@@ -43,10 +43,10 @@
 [0m[[0minfo[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:381)[0m
 [0m[[0minfo[0m] [0m	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)[0m
 [0m[[0minfo[0m] [0m	at scala.App$class.main(App.scala:76)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:10)[0m
 [0m[[0minfo[0m] [0m	at kamontest.Main.main(Main.scala)[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m[ERROR] [09/01/2016 09:24:37.099] [main] [akka.actor.ActorSystemImpl(application)] While trying to load extension [im.nasim.kamon.PerfReporterExtension], skipping...[0m
+[0m[[0minfo[0m] [0m[ERROR] [09/01/2016 15:20:40.789] [main] [akka.actor.ActorSystemImpl(application)] While trying to load extension [im.nasim.kamon.PerfReporterExtension], skipping...[0m
 [0m[[0minfo[0m] [0mjava.lang.NoSuchMethodException: im.nasim.kamon.PerfReporterExtension.<init>()[0m
 [0m[[0minfo[0m] [0m	at java.lang.Class.getConstructor0(Class.java:3082)[0m
 [0m[[0minfo[0m] [0m	at java.lang.Class.getDeclaredConstructor(Class.java:2178)[0m
@@ -74,8 +74,8 @@
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystemImpl.start(ActorSystem.scala:681)[0m
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:143)[0m
 [0m[[0minfo[0m] [0m	at akka.actor.ActorSystem$.apply(ActorSystem.scala:110)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:19)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.delayedEndpoint$kamontest$Main$1(Main.scala:21)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$delayedInit$body.apply(Main.scala:10)[0m
 [0m[[0minfo[0m] [0m	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)[0m
 [0m[[0minfo[0m] [0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)[0m
 [0m[[0minfo[0m] [0m	at scala.App$$anonfun$main$1.apply(App.scala:76)[0m
@@ -83,148 +83,79 @@
 [0m[[0minfo[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:381)[0m
 [0m[[0minfo[0m] [0m	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)[0m
 [0m[[0minfo[0m] [0m	at scala.App$class.main(App.scala:76)[0m
-[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:8)[0m
+[0m[[0minfo[0m] [0m	at kamontest.Main$.main(Main.scala:10)[0m
 [0m[[0minfo[0m] [0m	at kamontest.Main.main(Main.scala)[0m
 [0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:37.143] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:37.503] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:44.519] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:45.368] [application-akka.actor.default-dispatcher-12] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:46.812] [kamon-akka.actor.default-dispatcher-5] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
-[0m[[0minfo[0m] [0m|       Min: 26                    Min: 0                 Min: 0             Min: 28               |[0m
-[0m[[0minfo[0m] [0m|       Avg: 45.0                   Avg: 0.0               Avg: 0.0           Avg: 52.0              |[0m
-[0m[[0minfo[0m] [0m|       Max: 69                    Max: 2                 Max: 1             Max: 72               |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:46.823] [kamon-akka.actor.default-dispatcher-5] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
-[0m[[0minfo[0m] [0m|                Min: 32                                   Min: 32                                 |[0m
-[0m[[0minfo[0m] [0m|                Avg: 116.0                                Avg: 120.0                              |[0m
-[0m[[0minfo[0m] [0m|                Max: 346                                  Max: 360                                |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:46.827] [kamon-akka.actor.default-dispatcher-5] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
-[0m[[0minfo[0m] [0m|      Min: 60                    Min: 0                    Total: 0             Total: 0         |[0m
-[0m[[0minfo[0m] [0m|      Avg: 399.0                Avg: 67.0                                                     |[0m
-[0m[[0minfo[0m] [0m|      Max: 1568                  Max: 540                                                        |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:46.831] [kamon-akka.actor.default-dispatcher-5] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
-[0m[[0minfo[0m] [0m|    Min: 9961472                        Min: 1                             Min: 1                 |[0m
-[0m[[0minfo[0m] [0m|    Avg: 9976035.0                      Avg: 1.0                           Avg: 1.0               |[0m
-[0m[[0minfo[0m] [0m|    Max: 10027008                       Max: 1                             Max: 1                 |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:46.840] [kamon-akka.actor.default-dispatcher-5] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
-[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
-[0m[[0minfo[0m] [0m|                               some-counter  =>  1                                                |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
-[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
-[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Min: 42           50th Perc: 42             90th Perc: 50             95th Perc: 50           |[0m
-[0m[[0minfo[0m] [0m|                      99th Perc: 50           99.9th Perc: 50                   Max: 50           |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
-[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
-[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:47.538] [application-akka.actor.default-dispatcher-6] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:48.388] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:53.408] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.559] [application-akka.actor.default-dispatcher-11] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.745] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    CPU (ALL)                                                                                     |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |[0m
-[0m[[0minfo[0m] [0m|       Min: 28                    Min: 0                 Min: 0             Min: 49               |[0m
-[0m[[0minfo[0m] [0m|       Avg: 35.0                   Avg: 0.0               Avg: 0.0           Avg: 62.0              |[0m
-[0m[[0minfo[0m] [0m|       Max: 48                    Max: 1                 Max: 1             Max: 70               |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.747] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Process-CPU                                                                                   |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|             User-Percentage                           Total-Percentage                           |[0m
-[0m[[0minfo[0m] [0m|                Min: 29                                   Min: 29                                 |[0m
-[0m[[0minfo[0m] [0m|                Avg: 35.0                                 Avg: 35.0                               |[0m
-[0m[[0minfo[0m] [0m|                Max: 44                                   Max: 45                                 |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.749] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Network (ALL)                                                                                 |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |[0m
-[0m[[0minfo[0m] [0m|      Min: 0                     Min: 0                    Total: 0             Total: 0         |[0m
-[0m[[0minfo[0m] [0m|      Avg: 247.0                Avg: 68.0                                                     |[0m
-[0m[[0minfo[0m] [0m|      Max: 800                   Max: 548                                                        |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.750] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Context-Switches                                                                              |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |[0m
-[0m[[0minfo[0m] [0m|    Min: 10027008                       Min: 1                             Min: 1                 |[0m
-[0m[[0minfo[0m] [0m|    Avg: 1.0027008E7                    Avg: 1.0                           Avg: 1.0               |[0m
-[0m[[0minfo[0m] [0m|    Max: 10027008                       Max: 1                             Max: 1                 |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m[INFO] [09/01/2016 09:24:56.751] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] [0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                         Counters                                                 |[0m
-[0m[[0minfo[0m] [0m|                                       -------------                                              |[0m
-[0m[[0minfo[0m] [0m|                               some-counter  =>  0                                                |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                        Histograms                                                |[0m
-[0m[[0minfo[0m] [0m|                                      --------------                                              |[0m
-[0m[[0minfo[0m] [0m|  some-histogram                                                                                  |[0m
-[0m[[0minfo[0m] [0m|    Min: 0            50th Perc: 0              90th Perc: 0              95th Perc: 0            |[0m
-[0m[[0minfo[0m] [0m|                      99th Perc: 0            99.9th Perc: 0                    Max: 0            |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                      MinMaxCounters                                              |[0m
-[0m[[0minfo[0m] [0m|                                    -----------------                                             |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m|                                          Gauges                                                  |[0m
-[0m[[0minfo[0m] [0m|                                        ----------                                                |[0m
-[0m[[0minfo[0m] [0m|                                                                                                  |[0m
-[0m[[0minfo[0m] [0m+--------------------------------------------------------------------------------------------------+[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:40.860] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:40.943] [application-akka.actor.default-dispatcher-8] [akka://application/user/cache] Message [im.nasim.kamon.CacheActor$GetAll$] from Actor[akka://application/temp/$a] to Actor[akka://application/user/cache] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:41.098] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:41.899] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:42.093] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:45.109] [application-akka.actor.default-dispatcher-8] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:48.109] [application-akka.actor.default-dispatcher-5] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.129] [application-akka.actor.default-dispatcher-5] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.189] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: ps-marksweep-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.189] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.190] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: load-average[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.191] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: class-loading[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: jmx-memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.204] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.205] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: file-system[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.205] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.205] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: ps-scavenge-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.205] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.209] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] others command: threads[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.210] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:50.210] [kamon-akka.actor.default-dispatcher-2] [akka://kamon/user/kamon-perf-reporter] No metrics reported[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:52.149] [application-akka.actor.default-dispatcher-12] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:57.129] [application-akka.actor.default-dispatcher-9] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:20:57.170] [application-akka.actor.default-dispatcher-9] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.094] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: ps-marksweep-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.094] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.094] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: load-average[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.094] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: class-loading[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: jmx-memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: file-system[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: ps-scavenge-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] others command: threads[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.095] [kamon-akka.actor.default-dispatcher-9] [akka://kamon/user/kamon-perf-reporter] No metrics reported[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:00.189] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:01.169] [application-akka.actor.default-dispatcher-12] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:02.233] [application-akka.actor.default-dispatcher-5] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:03.210] [application-akka.actor.default-dispatcher-9] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:03.249] [application-akka.actor.default-dispatcher-6] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:04.269] [application-akka.actor.default-dispatcher-3] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:06.229] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:08.289] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.087] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: ps-marksweep-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.087] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.087] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: load-average[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.087] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.087] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: class-loading[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: jmx-memory[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: file-system[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: ps-scavenge-garbage-collector[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] others command: threads[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] error occurred while storing data[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:10.088] [kamon-akka.actor.default-dispatcher-4] [akka://kamon/user/kamon-perf-reporter] No metrics reported[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:11.309] [application-akka.actor.default-dispatcher-4] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:13.249] [application-akka.actor.default-dispatcher-8] [akka://application/user/artifical/peak:generator] schedule peak GenerateNumber[0m
+[0m[[0minfo[0m] [0m[INFO] [09/01/2016 15:21:16.329] [application-akka.actor.default-dispatcher-2] [akka://application/user/artifical/peak:generator] schedule peak GenerateSecureNumber[0m

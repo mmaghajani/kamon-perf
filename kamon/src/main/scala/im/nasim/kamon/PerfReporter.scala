@@ -1,7 +1,11 @@
 package im.nasim.kamon
 
+import java.util.Calendar
+import java.util.concurrent.TimeUnit
+
 import akka.actor.{Actor, ActorLogging, ExtendedActorSystem, Extension, ExtensionId, ExtensionIdProvider, Props}
 import akka.event.Logging
+import im.nasim.kamon.CacheActor.Put
 import kamon.Kamon
 //import im.nasim.kamon.PerfReporter.{PerfReporter, LogReporterExtension, LogReporterSubscriber}
 import kamon.metric.{Entity, EntitySnapshot}
@@ -36,31 +40,61 @@ class PerfReporterSubscriber extends Actor with ActorLogging {
 
   import im.nasim.kamon.PerfReporterSubscriber.RichHistogramSnapshot
 
+  val cache = context.actorOf(CacheActor.props , "cache")
+
   def receive = {
-    case tick: TickMetricSnapshot ⇒ printMetricSnapshot(tick)
+//    case tick: TickMetricSnapshot ⇒ printMetricSnapshot(tick)
+    case tick : TickMetricSnapshot => storeMetric(tick)
   }
 
-  def printMetricSnapshot(tick: TickMetricSnapshot): Unit = {
-    // Group all the user metrics together.
+
+  def storeMetric(tick : TickMetricSnapshot ): Unit = {
     val histograms = Map.newBuilder[String, Option[Histogram.Snapshot]]
     val counters = Map.newBuilder[String, Option[Counter.Snapshot]]
     val minMaxCounters = Map.newBuilder[String, Option[Histogram.Snapshot]]
     val gauges = Map.newBuilder[String, Option[Histogram.Snapshot]]
 
     tick.metrics foreach {
-      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
-      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
-      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
-      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
-      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
-      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
-      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
-      case (entity, snapshot) if entity.category == "system-metric"   ⇒ logSystemMetrics(entity.name, snapshot)
+//      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
+//      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
+//      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
+//      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
+//      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
+//      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
+//      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
+      case (entity, snapshot) if entity.category == "system-metric"   ⇒ logSystemMetrics(entity.name, snapshot) match {
+        case Some(stat) => cache ! Put(Calendar.getInstance() , stat)
+        case None => log.info("error occurred while storing data")
+      }
       case ignoreEverythingElse                                       ⇒
     }
 
     logMetrics(histograms.result(), counters.result(), minMaxCounters.result(), gauges.result())
   }
+
+//  def printMetricSnapshot(tick: TickMetricSnapshot): Unit = {
+//    // Group all the user metrics together.
+//    val histograms = Map.newBuilder[String, Option[Histogram.Snapshot]]
+//    val counters = Map.newBuilder[String, Option[Counter.Snapshot]]
+//    val minMaxCounters = Map.newBuilder[String, Option[Histogram.Snapshot]]
+//    val gauges = Map.newBuilder[String, Option[Histogram.Snapshot]]
+//
+//
+//
+//    tick.metrics foreach {
+//      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
+//      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
+//      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
+//      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
+//      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
+//      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
+//      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
+//      case (entity, snapshot) if entity.category == "system-metric"   ⇒ logSystemMetrics(entity.name, snapshot)
+//      case ignoreEverythingElse                                       ⇒
+//    }
+//
+//    logMetrics(histograms.result(), counters.result(), minMaxCounters.result(), gauges.result())
+//  }
 
   def logActorMetrics(name: String, actorSnapshot: EntitySnapshot): Unit = {
     for {
@@ -174,121 +208,190 @@ class PerfReporterSubscriber extends Actor with ActorLogging {
 
   }
 
-  def logSystemMetrics(metric: String, snapshot: EntitySnapshot): Unit = metric match {
+//  def logSystemMetrics(metric: String, snapshot: EntitySnapshot): Unit = metric match {
+//    case "cpu"              ⇒ logCpuMetrics(snapshot)
+//    case "network"          ⇒ logNetworkMetrics(snapshot)
+//    case "process-cpu"      ⇒ logProcessCpuMetrics(snapshot)
+//    case "context-switches" ⇒ logContextSwitchesMetrics(snapshot)
+//    case ignoreOthers       ⇒
+//  }
+
+  def logSystemMetrics(metric: String, snapshot: EntitySnapshot): Option[Statistic] = metric match {
     case "cpu"              ⇒ logCpuMetrics(snapshot)
     case "network"          ⇒ logNetworkMetrics(snapshot)
     case "process-cpu"      ⇒ logProcessCpuMetrics(snapshot)
     case "context-switches" ⇒ logContextSwitchesMetrics(snapshot)
     case ignoreOthers       ⇒
+      log.info("others command: {}", ignoreOthers)
+      None
   }
 
-  def logCpuMetrics(cpuMetrics: EntitySnapshot): Unit = {
+//  def logCpuMetrics(cpuMetrics: EntitySnapshot): Unit = {
+//    for {
+//      user ← cpuMetrics.histogram("cpu-user")
+//      system ← cpuMetrics.histogram("cpu-system")
+//      cpuWait ← cpuMetrics.histogram("cpu-wait")
+//      idle ← cpuMetrics.histogram("cpu-idle")
+//    } {
+//
+//      log.info(
+//        """
+//          |+--------------------------------------------------------------------------------------------------+
+//          ||                                                                                                  |
+//          ||    CPU (ALL)                                                                                     |
+//          ||                                                                                                  |
+//          ||    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |
+//          ||       Min: %-3s                   Min: %-3s               Min: %-3s           Min: %-3s              |
+//          ||       Avg: %-3s                   Avg: %-3s               Avg: %-3s           Avg: %-3s              |
+//          ||       Max: %-3s                   Max: %-3s               Max: %-3s           Max: %-3s              |
+//          ||                                                                                                  |
+//          ||                                                                                                  |
+//          |+--------------------------------------------------------------------------------------------------+"""
+//          .stripMargin.format(
+//          user.min, system.min, cpuWait.min, idle.min,
+//          user.average, system.average, cpuWait.average, idle.average,
+//          user.max, system.max, cpuWait.max, idle.max))
+//    }
+//
+//  }
+
+  def logCpuMetrics(cpuMetrics: EntitySnapshot): Option[CPUStatistic] = {
     for {
       user ← cpuMetrics.histogram("cpu-user")
       system ← cpuMetrics.histogram("cpu-system")
       cpuWait ← cpuMetrics.histogram("cpu-wait")
       idle ← cpuMetrics.histogram("cpu-idle")
-    } {
+    } yield{
 
-      log.info(
-        """
-          |+--------------------------------------------------------------------------------------------------+
-          ||                                                                                                  |
-          ||    CPU (ALL)                                                                                     |
-          ||                                                                                                  |
-          ||    User (percentage)       System (percentage)    Wait (percentage)   Idle (percentage)          |
-          ||       Min: %-3s                   Min: %-3s               Min: %-3s           Min: %-3s              |
-          ||       Avg: %-3s                   Avg: %-3s               Avg: %-3s           Avg: %-3s              |
-          ||       Max: %-3s                   Max: %-3s               Max: %-3s           Max: %-3s              |
-          ||                                                                                                  |
-          ||                                                                                                  |
-          |+--------------------------------------------------------------------------------------------------+"""
-          .stripMargin.format(
-          user.min, system.min, cpuWait.min, idle.min,
-          user.average, system.average, cpuWait.average, idle.average,
-          user.max, system.max, cpuWait.max, idle.max))
+      val statistic : CPUStatistic = new CPUStatistic(new PacketData(user.min , user.average , user.max) ,
+        new PacketData(system.min , system.average , system.max) ,
+        new PacketData(cpuWait.min , cpuWait.average , cpuWait.max) ,
+        new PacketData(idle.min , idle.average , idle.max))
+      statistic
     }
-
   }
 
-  def logNetworkMetrics(networkMetrics: EntitySnapshot): Unit = {
+
+//  def logNetworkMetrics(networkMetrics: EntitySnapshot): Unit = {
+//    for {
+//      rxBytes ← networkMetrics.histogram("rx-bytes")
+//      txBytes ← networkMetrics.histogram("tx-bytes")
+//      rxErrors ← networkMetrics.histogram("rx-errors")
+//      txErrors ← networkMetrics.histogram("tx-errors")
+//    } {
+//
+//      log.info(
+//        """
+//          |+--------------------------------------------------------------------------------------------------+
+//          ||                                                                                                  |
+//          ||    Network (ALL)                                                                                 |
+//          ||                                                                                                  |
+//          ||     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |
+//          ||      Min: %-4s                  Min: %-4s                 Total: %-8s      Total: %-8s  |
+//          ||      Avg: %-4s                Avg: %-4s                                                     |
+//          ||      Max: %-4s                  Max: %-4s                                                       |
+//          ||                                                                                                  |
+//          |+--------------------------------------------------------------------------------------------------+"""
+//          .stripMargin.
+//          format(
+//            rxBytes.min, txBytes.min, rxErrors.sum, txErrors.sum,
+//            rxBytes.average, txBytes.average,
+//            rxBytes.max, txBytes.max))
+//    }
+//  }
+
+  def logNetworkMetrics(networkMetrics: EntitySnapshot): Option[NetStatistic] = {
     for {
       rxBytes ← networkMetrics.histogram("rx-bytes")
       txBytes ← networkMetrics.histogram("tx-bytes")
       rxErrors ← networkMetrics.histogram("rx-errors")
       txErrors ← networkMetrics.histogram("tx-errors")
-    } {
+    } yield{
 
-      log.info(
-        """
-          |+--------------------------------------------------------------------------------------------------+
-          ||                                                                                                  |
-          ||    Network (ALL)                                                                                 |
-          ||                                                                                                  |
-          ||     Rx-Bytes (KB)                Tx-Bytes (KB)              Rx-Errors            Tx-Errors       |
-          ||      Min: %-4s                  Min: %-4s                 Total: %-8s      Total: %-8s  |
-          ||      Avg: %-4s                Avg: %-4s                                                     |
-          ||      Max: %-4s                  Max: %-4s                                                       |
-          ||                                                                                                  |
-          |+--------------------------------------------------------------------------------------------------+"""
-          .stripMargin.
-          format(
-            rxBytes.min, txBytes.min, rxErrors.sum, txErrors.sum,
-            rxBytes.average, txBytes.average,
-            rxBytes.max, txBytes.max))
+      val statistic : NetStatistic = new NetStatistic(new PacketData(rxBytes.min , rxBytes.average , rxBytes.max) ,
+        new PacketData(txBytes.min , txBytes.average , txBytes.max) , rxErrors.sum , txErrors.sum)
+      statistic
     }
   }
 
-  def logProcessCpuMetrics(processCpuMetrics: EntitySnapshot): Unit = {
+//  def logProcessCpuMetrics(processCpuMetrics: EntitySnapshot): Unit = {
+//    for {
+//      user ← processCpuMetrics.histogram("process-user-cpu")
+//      total ← processCpuMetrics.histogram("process-cpu")
+//    } {
+//
+//      log.info(
+//        """
+//          |+--------------------------------------------------------------------------------------------------+
+//          ||                                                                                                  |
+//          ||    Process-CPU                                                                                   |
+//          ||                                                                                                  |
+//          ||             User-Percentage                           Total-Percentage                           |
+//          ||                Min: %-12s                         Min: %-12s                       |
+//          ||                Avg: %-12s                         Avg: %-12s                       |
+//          ||                Max: %-12s                         Max: %-12s                       |
+//          ||                                                                                                  |
+//          |+--------------------------------------------------------------------------------------------------+"""
+//          .stripMargin.format(
+//          user.min, total.min,
+//          user.average, total.average,
+//          user.max, total.max))
+//    }
+//
+//  }
+
+  def logProcessCpuMetrics(processCpuMetrics: EntitySnapshot): Option[ProcessCPUStatistic] = {
     for {
       user ← processCpuMetrics.histogram("process-user-cpu")
       total ← processCpuMetrics.histogram("process-cpu")
-    } {
+    } yield{
 
-      log.info(
-        """
-          |+--------------------------------------------------------------------------------------------------+
-          ||                                                                                                  |
-          ||    Process-CPU                                                                                   |
-          ||                                                                                                  |
-          ||             User-Percentage                           Total-Percentage                           |
-          ||                Min: %-12s                         Min: %-12s                       |
-          ||                Avg: %-12s                         Avg: %-12s                       |
-          ||                Max: %-12s                         Max: %-12s                       |
-          ||                                                                                                  |
-          |+--------------------------------------------------------------------------------------------------+"""
-          .stripMargin.format(
-          user.min, total.min,
-          user.average, total.average,
-          user.max, total.max))
+      val statistic : ProcessCPUStatistic = new ProcessCPUStatistic(new PacketData(user.min , user.average , user.max) ,
+        new PacketData(total.min , total.average , total.max))
+      statistic
     }
 
   }
 
-  def logContextSwitchesMetrics(contextSwitchMetrics: EntitySnapshot): Unit = {
+//  def logContextSwitchesMetrics(contextSwitchMetrics: EntitySnapshot): Unit = {
+//    for {
+//      perProcessVoluntary ← contextSwitchMetrics.histogram("context-switches-process-voluntary")
+//      perProcessNonVoluntary ← contextSwitchMetrics.histogram("context-switches-process-non-voluntary")
+//      global ← contextSwitchMetrics.histogram("context-switches-global")
+//    } {
+//
+//      log.info(
+//        """
+//          |+--------------------------------------------------------------------------------------------------+
+//          ||                                                                                                  |
+//          ||    Context-Switches                                                                              |
+//          ||                                                                                                  |
+//          ||        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |
+//          ||    Min: %-12s                   Min: %-12s                  Min: %-12s      |
+//          ||    Avg: %-12s                   Avg: %-12s                  Avg: %-12s      |
+//          ||    Max: %-12s                   Max: %-12s                  Max: %-12s      |
+//          ||                                                                                                  |
+//          |+--------------------------------------------------------------------------------------------------+"""
+//          .stripMargin.
+//          format(
+//            global.min, perProcessNonVoluntary.min, perProcessVoluntary.min,
+//            global.average, perProcessNonVoluntary.average, perProcessVoluntary.average,
+//            global.max, perProcessNonVoluntary.max, perProcessVoluntary.max))
+//    }
+//
+//  }
+
+  def logContextSwitchesMetrics(contextSwitchMetrics: EntitySnapshot): Option[SwitchStatistic] = {
     for {
       perProcessVoluntary ← contextSwitchMetrics.histogram("context-switches-process-voluntary")
       perProcessNonVoluntary ← contextSwitchMetrics.histogram("context-switches-process-non-voluntary")
       global ← contextSwitchMetrics.histogram("context-switches-global")
-    } {
+    } yield{
 
-      log.info(
-        """
-          |+--------------------------------------------------------------------------------------------------+
-          ||                                                                                                  |
-          ||    Context-Switches                                                                              |
-          ||                                                                                                  |
-          ||        Global                Per-Process-Non-Voluntary            Per-Process-Voluntary          |
-          ||    Min: %-12s                   Min: %-12s                  Min: %-12s      |
-          ||    Avg: %-12s                   Avg: %-12s                  Avg: %-12s      |
-          ||    Max: %-12s                   Max: %-12s                  Max: %-12s      |
-          ||                                                                                                  |
-          |+--------------------------------------------------------------------------------------------------+"""
-          .stripMargin.
-          format(
-            global.min, perProcessNonVoluntary.min, perProcessVoluntary.min,
-            global.average, perProcessNonVoluntary.average, perProcessVoluntary.average,
-            global.max, perProcessNonVoluntary.max, perProcessVoluntary.max))
+      val statistic : SwitchStatistic = new SwitchStatistic(new PacketData(global.min , global.average , global.max) ,
+        new PacketData(perProcessNonVoluntary.min , perProcessNonVoluntary.average , perProcessNonVoluntary.max) ,
+        new PacketData(perProcessVoluntary.min , perProcessVoluntary.average , perProcessVoluntary.max))
+      statistic
     }
 
   }

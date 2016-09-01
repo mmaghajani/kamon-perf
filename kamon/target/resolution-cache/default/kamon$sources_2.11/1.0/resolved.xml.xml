@@ -4,7 +4,7 @@
 		module="kamon$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160901092241"
+		publication="20160901103520"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -69,6 +69,9 @@
 		</dependency>
 		<dependency org="org.aspectj" name="aspectjweaver" rev="1.8.5" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="aspectjweaver" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.github.ben-manes.caffeine" name="caffeine" rev="2.3.3" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="caffeine" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.aspectj" name="aspectjrt" rev="1.8.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="aspectjrt" type="src" ext="jar" conf="sources" e:classifier="sources"/>
