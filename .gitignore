@@ -1,0 +1,26 @@
+# Compiled source #
+###################
+target/
+*.class
+
+
+# Packages #
+############
+
+
+
+# Logs and databases #
+######################
+src/main/resources/logback.xml
+*.log
+
+
+
+# OS generated files #
+######################
+*~
+
+
+# Other #
+#######################
+.idea
