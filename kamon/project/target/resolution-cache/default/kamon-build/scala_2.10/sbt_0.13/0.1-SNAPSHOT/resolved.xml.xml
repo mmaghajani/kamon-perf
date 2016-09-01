@@ -4,7 +4,7 @@
 		module="kamon-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160901110657"
+		publication="20160901160139"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

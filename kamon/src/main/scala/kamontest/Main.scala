@@ -3,8 +3,10 @@ package kamontest
 import MessageGenerator._
 import RandomNumberActor._
 import akka.actor.{ActorSystem, Props}
+import http.im.nasim.perf.http.HttpApi
 import im.nasim.kamon.CacheActor.{GetAll, GetAllResponse}
 import kamon.Kamon
+
 import scala.concurrent.ExecutionContext.Implicits.global
 
 object Main extends App {
@@ -26,7 +28,7 @@ object Main extends App {
 
   val generator = system.actorOf(Props[MessageGeneratorActor], "artifical")
 
-
+  HttpApi(system).start() ;
 
   generator ! ConstantLoad(Schedule(numberGenerator, GenerateNumber, 5000))
   generator ! ConstantLoad(Schedule(numberGenerator, GenerateSecureNumber, 1000))

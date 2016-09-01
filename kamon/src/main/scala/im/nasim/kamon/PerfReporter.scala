@@ -55,13 +55,13 @@ class PerfReporterSubscriber extends Actor with ActorLogging {
     val gauges = Map.newBuilder[String, Option[Histogram.Snapshot]]
 
     tick.metrics foreach {
-//      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
-//      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
-//      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
-//      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
-//      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
-//      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
-//      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
+      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
+      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
+      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
+      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
+      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
+      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
+      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
       case (entity, snapshot) if entity.category == "system-metric"   ⇒ logSystemMetrics(entity.name, snapshot) match {
         case Some(stat) => cache ! Put(Calendar.getInstance() , stat)
         case None => log.info("error occurred while storing data")
@@ -71,30 +71,6 @@ class PerfReporterSubscriber extends Actor with ActorLogging {
 
     logMetrics(histograms.result(), counters.result(), minMaxCounters.result(), gauges.result())
   }
-
-//  def printMetricSnapshot(tick: TickMetricSnapshot): Unit = {
-//    // Group all the user metrics together.
-//    val histograms = Map.newBuilder[String, Option[Histogram.Snapshot]]
-//    val counters = Map.newBuilder[String, Option[Counter.Snapshot]]
-//    val minMaxCounters = Map.newBuilder[String, Option[Histogram.Snapshot]]
-//    val gauges = Map.newBuilder[String, Option[Histogram.Snapshot]]
-//
-//
-//
-//    tick.metrics foreach {
-//      case (entity, snapshot) if entity.category == "akka-actor"      ⇒ logActorMetrics(entity.name, snapshot)
-//      case (entity, snapshot) if entity.category == "akka-dispatcher" ⇒ logDispatcherMetrics(entity, snapshot)
-//      case (entity, snapshot) if entity.category == "trace"           ⇒ logTraceMetrics(entity.name, snapshot)
-//      case (entity, snapshot) if entity.category == "histogram"       ⇒ histograms += (entity.name -> snapshot.histogram("histogram"))
-//      case (entity, snapshot) if entity.category == "counter"         ⇒ counters += (entity.name -> snapshot.counter("counter"))
-//      case (entity, snapshot) if entity.category == "min-max-counter" ⇒ minMaxCounters += (entity.name -> snapshot.minMaxCounter("min-max-counter"))
-//      case (entity, snapshot) if entity.category == "gauge"           ⇒ gauges += (entity.name -> snapshot.gauge("gauge"))
-//      case (entity, snapshot) if entity.category == "system-metric"   ⇒ logSystemMetrics(entity.name, snapshot)
-//      case ignoreEverythingElse                                       ⇒
-//    }
-//
-//    logMetrics(histograms.result(), counters.result(), minMaxCounters.result(), gauges.result())
-//  }
 
   def logActorMetrics(name: String, actorSnapshot: EntitySnapshot): Unit = {
     for {
@@ -207,14 +183,6 @@ class PerfReporterSubscriber extends Actor with ActorLogging {
     }
 
   }
-
-//  def logSystemMetrics(metric: String, snapshot: EntitySnapshot): Unit = metric match {
-//    case "cpu"              ⇒ logCpuMetrics(snapshot)
-//    case "network"          ⇒ logNetworkMetrics(snapshot)
-//    case "process-cpu"      ⇒ logProcessCpuMetrics(snapshot)
-//    case "context-switches" ⇒ logContextSwitchesMetrics(snapshot)
-//    case ignoreOthers       ⇒
-//  }
 
   def logSystemMetrics(metric: String, snapshot: EntitySnapshot): Option[Statistic] = metric match {
     case "cpu"              ⇒ logCpuMetrics(snapshot)

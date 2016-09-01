@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="default"
 		confs="default"
-		date="20160901103519"/>
+		date="20160901172732"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-aspectj">
 			<revision name="0.10.0" status="release" pubdate="20140912192843" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="52">

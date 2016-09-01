@@ -1,3 +1,6 @@
-[0m[[0mdebug[0m] [0mOther repositories:[0m
-[0m[[0mdebug[0m] [0mDefault repositories:[0m
-[0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
+[debug] Other repositories:
+[debug] Default repositories:
+[debug] Using inline dependencies specified in Scala.
+[debug] Using inline dependencies specified in Scala.
+[warn] Binary version (2.10) for dependency org.scala-lang#scala-reflect;2.10.3
+[warn] 	in default#kamon$sources_2.11;1.0 differs from Scala binary version in project (2.11).
