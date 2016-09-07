@@ -1,10 +1,11 @@
-package im.nasim.kamon
+package im.nasim.kamon.perf.reporter
 
-import java.util.Calendar
-
+import java.text.SimpleDateFormat
+import java.util.{Calendar, Locale}
+import scala.collection.JavaConverters._
 import akka.actor.{Actor, ActorLogging, Props}
 import com.github.benmanes.caffeine.cache.Cache
-import im.nasim.kamon.CacheActor._
+import im.nasim.kamon.perf.reporter.CacheActor._
 
 /**
   * Created by mma on 9/1/16.
@@ -24,13 +25,16 @@ class CacheActor extends Actor with ActorLogging{
     case Get( key : Calendar ) =>
       val statistic = Option{cache.getIfPresent(key)}
       sender() ! GetResponse(statistic)
-    case Interval( start : Calendar , end : Calendar) =>
+    case Interval( start : String , end : String) =>
       val replyTo = sender()
-      val records : Seq[(Calendar , Statistic)]  =
-      for( (calendar , statistic) <- cache.asMap()
-      if isGreaterThan(calendar , start) && !isGreaterThan(calendar , end))yield(calendar , statistic)
+      val startDate : Calendar = Calendar.getInstance()
+      val endDate : Calendar = Calendar.getInstance()
+      val sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy")
+      startDate.setTime(sdf.parse(start))// all done
+      log.info("craeted : " + startDate.getTime.toString)
+      endDate.setTime(sdf.parse(start))// all done
+      val records = cache.asMap().asScala.filterKeys(a => {isGreaterThan( a , startDate) && (!isGreaterThan(a , endDate)) })
       replyTo ! records
-
     case GetAll => sender() ! GetAllResponse( Some(cache))
   }
 }
@@ -48,7 +52,7 @@ object CacheActor {
 
   case class Put( key : Calendar , value : Statistic )
 
-  case class Interval( start : Calendar , end : Calendar)
+  case class Interval( startDate : String , endDate : String)
 
   case class IntervalResponse( value : Seq[(Calendar , Statistic)])
 }

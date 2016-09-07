@@ -3,8 +3,8 @@ package kamontest
 import MessageGenerator._
 import RandomNumberActor._
 import akka.actor.{ActorSystem, Props}
-import http.im.nasim.perf.http.HttpApi
-import im.nasim.kamon.CacheActor.{GetAll, GetAllResponse}
+import im.nasim.kamon.perf.http.HttpApi
+import im.nasim.kamon.perf.reporter.CacheActor.{GetAll, GetAllResponse}
 import kamon.Kamon
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -39,9 +39,9 @@ object Main extends App {
   import akka.util.Timeout
   import scala.concurrent.duration._
 
-  implicit val timeOut: Timeout = Timeout(30 seconds)
-  (cache ? GetAll).mapTo[GetAllResponse].map(result => {
-    println(result.value)
-  })
+//  implicit val timeOut: Timeout = Timeout(30 seconds)
+//  (cache ? GetAll).mapTo[GetAllResponse].map(result => {
+//    println(result.value)
+//  })
 
 }

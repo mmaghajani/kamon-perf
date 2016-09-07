@@ -1,4 +1,4 @@
-package http.service
+package im.nasim.kamon.perf.http.service
 
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 /**

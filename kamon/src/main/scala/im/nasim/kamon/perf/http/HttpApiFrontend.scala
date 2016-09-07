@@ -1,4 +1,4 @@
-package http
+package im.nasim.kamon.perf.http
 
 /**
   * Created by mma on 9/1/16.
@@ -9,7 +9,7 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.settings.ServerSettings
 import akka.stream.ActorMaterializer
 import com.typesafe.config.Config
-import http.service._
+import im.nasim.kamon.perf.http.service._
 import scala.concurrent.duration._
 import scala.util.{Failure, Success}
 

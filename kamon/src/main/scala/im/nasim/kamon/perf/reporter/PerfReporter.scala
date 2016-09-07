@@ -1,16 +1,15 @@
-package im.nasim.kamon
+package im.nasim.kamon.perf.reporter
 
 import java.util.Calendar
-import java.util.concurrent.TimeUnit
 
 import akka.actor.{Actor, ActorLogging, ExtendedActorSystem, Extension, ExtensionId, ExtensionIdProvider, Props}
 import akka.event.Logging
-import im.nasim.kamon.CacheActor.Put
+import CacheActor.Put
 import kamon.Kamon
 //import im.nasim.kamon.PerfReporter.{PerfReporter, LogReporterExtension, LogReporterSubscriber}
-import kamon.metric.{Entity, EntitySnapshot}
 import kamon.metric.SubscriptionsDispatcher.TickMetricSnapshot
 import kamon.metric.instrument.{Counter, Histogram}
+import kamon.metric.{Entity, EntitySnapshot}
 
 /**
   * Created by mma on 9/1/16.
@@ -37,10 +36,9 @@ class PerfReporterExtension(system: ExtendedActorSystem) extends Kamon.Extension
 }
 
 class PerfReporterSubscriber extends Actor with ActorLogging {
+  import PerfReporterSubscriber.RichHistogramSnapshot
 
-  import im.nasim.kamon.PerfReporterSubscriber.RichHistogramSnapshot
-
-  val cache = context.actorOf(CacheActor.props , "cache")
+  val cache = context.system.actorOf(CacheActor.props , "cache")
 
   def receive = {
 //    case tick: TickMetricSnapshot ⇒ printMetricSnapshot(tick)

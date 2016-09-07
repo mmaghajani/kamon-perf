@@ -1,4 +1,4 @@
-package im.nasim.kamon
+package im.nasim.kamon.perf.reporter
 
 /**
   * Created by mma on 9/1/16.
